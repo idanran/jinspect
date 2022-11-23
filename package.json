@@ -1,0 +1,47 @@
+{
+  "name": "jinspect",
+  "description": "String representations of objects",
+  "version": "1.0.0",
+  "sideEffects": false,
+  "typings": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idanran/jinspect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idanran/jinspect/issues"
+  },
+  "homepage": "https://github.com/idanran/jinspect",
+  "author": "idanran <idanran@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile:cjs": "esbuild src/index.ts --outfile=lib/index.cjs --bundle --sourcemap --platform=node --target=es2019",
+    "compile:esm": "esbuild src/index.ts --outfile=lib/index.mjs --bundle --sourcemap --platform=neutral --target=esnext",
+    "build": "yarn compile:cjs && yarn compile:esm && yarn dtsc",
+    "test": "mocha -r esbuild-register tests/*.spec.ts",
+    "test:text": "shx rm -rf coverage && c8 -r text yarn test",
+    "test:json": "shx rm -rf coverage && c8 -r json yarn test",
+    "test:html": "shx rm -rf coverage && c8 -r html yarn test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.9",
+    "dtsc": "^2.2.3",
+    "esbuild": "^0.15.15",
+    "typescript": "4.9.3",
+    "mocha": "^10.1.0",
+    "esbuild-register": "^3.4.1",
+    "c8": "^7.12.0",
+    "shx": "^0.3.4"
+  }
+}

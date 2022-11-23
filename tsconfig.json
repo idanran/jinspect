@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outFile": "lib/index.d.ts",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "module": "esnext",
+    "moduleDetection": "force",
+    "strict": true,
+    "target": "esnext",
+    "useDefineForClassFields": true,
+  },
+  "include": [
+    "src",
+  ],
+}
