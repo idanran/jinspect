@@ -2,7 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/jinspect?style=flat-square)](https://www.npmjs.com/package/jinspect)
 
-String representations of objects. Can run on any platform that supports JavaScript.
+String representations of objects. Can run on any platform that supports
+JavaScript.
 
 ## Usage
 
@@ -29,8 +30,16 @@ or
 import { inspect } from "https://deno.land/x/jinspect@v1.0.0/lib/index.mjs";
 ```
 
-### Browser (`type="module"`)
+### Browser
 
 ```js
 import { inspect } from "https://deno.land/x/jinspect@v1.0.0/lib/index.mjs";
+```
+
+or
+
+```js
+const { inspect } = await import(
+  "https://deno.land/x/jinspect@v1.0.0/lib/index.mjs"
+);
 ```
