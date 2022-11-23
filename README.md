@@ -28,14 +28,14 @@ import { inspect } from "npm:jinspect@latest";
 or
 
 ```ts
-// @deno-types="https://deno.land/x/jinspect@v1.0.1/lib/index.d.ts"
-import { inspect } from "https://deno.land/x/jinspect@v1.0.1/lib/index.mjs";
+// @deno-types="https://deno.land/x/jinspect@1.0.2/lib/index.d.ts"
+import { inspect } from "https://deno.land/x/jinspect@1.0.2/lib/index.mjs";
 ```
 
 ### Browser
 
 ```js
-import { inspect } from "https://deno.land/x/jinspect@v1.0.1/lib/index.mjs";
+import { inspect } from "https://deno.land/x/jinspect@1.0.2/lib/index.mjs";
 ```
 
 or
