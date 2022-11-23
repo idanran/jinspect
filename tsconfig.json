@@ -11,7 +11,7 @@
     "module": "esnext",
     "moduleDetection": "force",
     "strict": true,
-    "target": "es2019",
+    "target": "esnext",
     "useDefineForClassFields": true,
   },
   "include": [
