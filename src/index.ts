@@ -27,6 +27,7 @@ interface InspectOptions {
     strAbbreviateSize?: number
 }
 
+/** Converts the input into a string that has the same format as printed by `console.log()`. */
 export function inspect(
     value: unknown,
     options: InspectOptions = {},
