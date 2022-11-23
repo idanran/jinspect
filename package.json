@@ -1,7 +1,7 @@
 {
   "name": "jinspect",
   "description": "String representations of objects",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "sideEffects": false,
   "typings": "lib/index.d.ts",
   "exports": {
@@ -24,6 +24,13 @@
   "homepage": "https://github.com/idanran/jinspect",
   "author": "idanran <idanran@outlook.com>",
   "license": "MIT",
+  "keywords": [
+    "inspect",
+    "util.inspect",
+    "object",
+    "stringify",
+    "pretty"
+  ],
   "scripts": {
     "compile:cjs": "esbuild src/index.ts --outfile=lib/index.cjs --bundle --sourcemap --platform=node --target=es2019",
     "compile:esm": "esbuild src/index.ts --outfile=lib/index.mjs --bundle --sourcemap --platform=neutral --target=esnext",
