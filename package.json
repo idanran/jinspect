@@ -1,9 +1,11 @@
 {
   "name": "jinspect",
   "description": "String representations of objects",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "sideEffects": false,
   "typings": "lib/index.d.ts",
+  "main": "lib/index.cjs",
+  "module": "lib/index.mjs",
   "exports": {
     ".": {
       "require": "./lib/index.cjs",
