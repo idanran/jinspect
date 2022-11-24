@@ -103,7 +103,7 @@ function maybeColor(fn: (s: string) => string, inspectOptions: typeof DEFAULT_IN
 // We can match Node's quoting behavior exactly by swapping the double quote and
 // single quote in this array. That would give preference to single quotes.
 // However, we prefer double quotes as the default.
-const QUOTES = ['"', "'", "`"];
+const QUOTES = ['"', "'", "`"]
 
 // Replace escape sequences that can modify output.
 function replaceEscapeSequences(string: string) {

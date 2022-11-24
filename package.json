@@ -1,7 +1,7 @@
 {
   "name": "jinspect",
   "description": "String representations of objects",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "sideEffects": false,
   "typings": "lib/index.d.ts",
   "exports": {
@@ -34,7 +34,7 @@
   "scripts": {
     "compile:cjs": "esbuild src/index.ts --outfile=lib/index.cjs --bundle --sourcemap --platform=node --target=es2019",
     "compile:esm": "esbuild src/index.ts --outfile=lib/index.mjs --bundle --sourcemap --platform=neutral --target=esnext",
-    "build": "yarn compile:cjs && yarn compile:esm && tsc --project tsconfig.json",
+    "build": "yarn compile:cjs && yarn compile:esm && tsc --project tsconfig.json && shx echo \"/// <reference types='./index.d.ts' />\" >> lib/index.mjs",
     "test": "mocha -r esbuild-register tests/*.spec.ts",
     "test:text": "shx rm -rf coverage && c8 -r text yarn test",
     "test:json": "shx rm -rf coverage && c8 -r json yarn test",
