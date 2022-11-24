@@ -28,20 +28,21 @@ import { inspect } from "npm:jinspect@latest";
 or
 
 ```ts
-import { inspect } from "https://deno.land/x/jinspect@1.0.5/lib/index.mjs";
+// @deno-types="https://deno.land/x/jinspect@1.0.6/lib/index.d.ts"
+import { inspect } from "https://deno.land/x/jinspect@1.0.6/lib/index.mjs";
 ```
 
 ### Browser
 
 ```js
-import { inspect } from "https://deno.land/x/jinspect@1.0.5/lib/index.mjs";
+import { inspect } from "https://deno.land/x/jinspect@1.0.6/lib/index.mjs";
 ```
 
 or
 
 ```js
 const { inspect } = await import(
-  "https://deno.land/x/jinspect@v1.0.5/lib/index.mjs"
+  "https://deno.land/x/jinspect@v1.0.6/lib/index.mjs"
 );
 ```
 
