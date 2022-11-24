@@ -42,7 +42,7 @@ or
 
 ```js
 const { inspect } = await import(
-  "https://deno.land/x/jinspect@v1.0.6/lib/index.mjs"
+  "https://deno.land/x/jinspect@1.0.6/lib/index.mjs"
 );
 ```
 
