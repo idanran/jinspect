@@ -15,6 +15,6 @@
     "useDefineForClassFields": true,
   },
   "include": [
-    "src",
+    "src/index.ts",
   ],
 }

@@ -1,7 +1,7 @@
 {
   "name": "jinspect",
   "description": "String representations of objects",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "sideEffects": false,
   "typings": "lib/index.d.ts",
   "main": "lib/index.cjs",
@@ -31,7 +31,8 @@
     "util.inspect",
     "object",
     "stringify",
-    "pretty"
+    "pretty",
+    "console"
   ],
   "scripts": {
     "compile:cjs": "esbuild src/index.ts --outfile=lib/index.cjs --bundle --sourcemap --platform=node --target=es2019",
@@ -45,7 +46,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.11.9",
-    "esbuild": "^0.15.15",
+    "esbuild": "^0.15.16",
     "typescript": "4.9.3",
     "mocha": "^10.1.0",
     "esbuild-register": "^3.4.1",
